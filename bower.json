@@ -1,0 +1,34 @@
+{
+  "name": "webbles-sdk",
+  "version": "0.0.1",
+  "homepage": "https://github.com/teambullback/webbles-sdk",
+  "authors": [
+    "teambullback@gmail.com"
+  ],
+  "description": "Social Tutorial Webbles SDK",
+  "main": [
+    "webbles-sdk.js",
+    "webbles-sdk.css"
+  ],
+  "moduleType": [
+    "es6"
+  ],
+  "keywords": [
+    "javascript"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.11.1",
+    "bootstrap": "2.3.2",
+    "sizzle": "~2.0.0",
+    "jquery.cookie": "~1.4.1"
+  }
+}
