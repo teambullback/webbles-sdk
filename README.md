@@ -21,30 +21,30 @@ Just download(or clone) sources to your website directory with other [required  
 
 ### How to use in your source codes
 
-- 1. Include script & css after [required  libraries](#req) in each pages.
+1. Include script & css after [required  libraries](#req) in each pages.
 
-```html
-<script type="text/javascript" src="webbles-sdk/webbles-sdk.js"></script>
-<link rel="stylesheet" href="webbles-sdk/webbles-sdk.css" />
-```
+	```html
+	<script type="text/javascript" src="webbles-sdk/webbles-sdk.js"></script>
+	<link rel="stylesheet" href="webbles-sdk/webbles-sdk.css" />
+	```
 
-- 2. Call a entry function where you want to start tutorial. such as..
+2. Call a entry function where you want to start tutorial. such as..
 
-```javascript
-$("#btn").click(function(){
-	var w = new Webbles();
-	w.startTutorial("bubbleInfos.json"); // your tutorial step(bubble) information file path
-});
-```
+	```javascript
+	$("#btn").click(function(){
+		var w = new Webbles();
+		w.startTutorial("bubbleInfos.json"); // your tutorial step(bubble) information file path
+	});
+	```
 
 - If your tutorial is composed of 2 pages or over, you have to call this function on 'body onload' of each pages except for first page. such as..
 
-```javascript
-$("body").ready(function(){
-	var w = new Webbles();
-	w.startTutorial("bubbleInfos.json"); // your tutorial step(bubble) information file path
-});
-```
+	```javascript
+	$("body").ready(function(){
+		var w = new Webbles();
+		w.startTutorial("bubbleInfos.json"); // your tutorial step(bubble) information file path
+	});
+	```
 
 
 ### How to make tutorial step information file (bubbleInfos.json)
